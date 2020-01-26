@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 body {
     /*background-color: red;*/
@@ -92,13 +93,16 @@ h1 {
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
     /*text-align: center;*/
+    /*position: relative;*/
     display: block;
     float: right;
+    /*left: 225px;*/
+    /*top: 50px;*/
     background-color: #0A0E29;
     font-family: 'Bebas Neue', cursive;
     font-size: 18pt;
     margin-left: 685px;
-    margin-top: 25px;
+    margin-top: 55px;
 }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
@@ -109,4 +113,150 @@ h1 {
 .navList button {
     font-family: 'Bebas Neue', cursive;
     font-size: 24pt;
+}
+
+.fa-caret-right {
+    position: relative;
+    float: right;
+    left: 0;
+}
+
+.fa-caret-right:hover
+{
+    position: relative;
+    left: 100px;
+}
+
+#AmOpt
+{
+    margin-left: 60pt;
+}
+
+.subdropdown {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    /*width: 2120px;*/
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 3;
+    background-color: red;
+
+}
+
+
+.subdropdown a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: all 300ms;
+}
+
+#A:hover .subdropdown
+{
+    display:block;
+    z-index: 2;
+    background-color: red;
+}
+
+#DivPaises
+{
+    width: 658.67px;
+    height: 616.44px;
+    background-color: rebeccapurple;
+}
+
+.ae flag
+{
+    width: 900px;
+    height: 900px;
+}
+
+#DivPaises i
+{
+    border: solid 2px yellow;
+    text-align: center;
+}
+
+.CountryHeader
+{
+    /*text-align: center;*/
+    float: left;
+}
+
+#DivRutas
+{
+    overflow: auto;
+    /*background-color: red;*/
+    height: 550px;
+}
+
+#RtAmrca
+{
+    position: relative;
+    /*background-color: aqua;*/
+    width: 650px;
+    left: 25%;
+    height: 360px;
+    overflow: scroll;
+}
+
+#RtAmrca table
+{
+    overflow: scroll;
+    /*background-color: purple;*/
+    width: 50px;
+    height: 250px;
+}
+
+#RtAmrca table th
+{
+    padding: 10px;
+    margin: 3px;
+    /*border: solid 1px red;*/
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+#RtAmrca table td
+{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    border: solid 1px black;
+}
+
+#RtAmrca table tr:nth-child(odd)
+{
+    background-color: gray;
+}
+
+#RtAmrca table th:nth-child(odd)
+{
+
+    background-color: #2D325A;
+}
+
+#RtAmrca table th:nth-child(even)
+{
+    background-color: #2494A2;
+}
+
+.DivideSccn
+{
+    background-color: green;
+}
+
+
+hr {
+    width: 295px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.HomeIcn
+{
+    float: left;
 }
