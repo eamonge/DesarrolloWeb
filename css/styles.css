@@ -463,3 +463,14 @@ h1 {
     width: 100%;
     background: #999;
 }
+
+.container
+{
+    position: relative;
+    /*left: 1%;*/
+    width: 1200px;
+    /*margin-right: -100px;*/
+    /*background-color: red;*/
+    left: 10%;
+    right: 25%;
+}
