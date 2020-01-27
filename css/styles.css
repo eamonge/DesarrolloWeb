@@ -2,20 +2,26 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Acme&display=swap');
 
+html
+{
+    scroll-behavior: smooth;
+    /*overflow: auto;*/
+}
+
 body {
     /*background-color: red;*/
     
 }
 
-#DivBannerMain
-{
+#DivBannerMain {
     position: relative;
     left: -8px;
     top: -16px;
     width: 100vw;
-    background: url('../img/test4.jpg') no-repeat center center fixed;
+    background: url('../img/test3.jpg') no-repeat center center fixed;
     background-size: cover;
     height: 100vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
     #DivBannerMain h1 {
@@ -41,16 +47,25 @@ body {
         position: relative;
         top: 150px;
         left: 44%;
-        background-color: rgba(0,0,0,.1);    
+        background-color: rgba(0,0,0,.2);    
         border: solid 1px white;
         padding: 12pt;
         height: 65px;
-        width: auto;
+        padding-right: 30px;
+        width: 200px;
         font-family: 'Open Sans', sans-serif;
         color: white;
         font-size: 18pt;
         text-align: center;
         transition: all 300ms;
+    }
+
+    #DivBannerMain button:hover
+    {
+        height: 80px;
+        /*width: 200px;*/
+        /*padding-right: 30px;*/
+        /*padding: 20pt;*/
     }
 
     #DivBannerMain .fa-caret-right {
@@ -65,11 +80,7 @@ body {
     }
 
 
-    #DivBannerMain button:hover
-    {
-        height: 80px;
-        /*padding: 20pt;*/
-    }
+    
 
 nav {
     position: relative;
@@ -325,4 +336,130 @@ h1 {
 .HomeIcn
 {
     float: left;
+}
+
+#InfoDiv {
+    padding: 10px;
+    background-color: #0D0E23;
+    color: white;
+    float: left;
+    width: 40%;
+    margin: 5px;
+    height: 93vh;
+    overflow: scroll;
+}
+
+#InfoDiv h1
+{
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+}
+
+#InfoDiv h2
+{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#SecDiv
+{
+    background-color: #0D0E23;
+    color: white;
+    float: left;
+    margin: 5px;
+    width: 40%;
+    overflow: scroll;
+    height: 97vh;
+}
+
+.headerHR
+{
+    border: solid 1px #DBB13B;
+}
+
+.AB
+{
+    background-color: red;
+    height: 175px;
+}
+
+
+
+#TercDiv
+{
+    background-color: #0D0E23;
+    height: 100vh;
+    width: 40%;
+    float: left;
+    overflow: scroll;
+}
+
+.tooltip
+{
+  position: absolute;
+  bottom: 100%;  /* At the top of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+#TercDiv h1
+{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#TercDiv h2
+{
+    color: white;
+    text-align: center;
+}
+
+#TercDiv img
+{
+    /*top: 10px;*/
+    position: relative;
+    top: 0px;
+    width: 155px;
+    height: 55px;
+    transition: all 400ms;
+}
+
+.tooltip::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+
+#TercDiv img:hover .tooltip
+{
+    content: "sf";
+}
+
+#TercDiv img:hover
+{
+    position: relative;
+    top: -5px;
+}
+
+.AssocHR {
+    border: solid 1px #2494A2;
+    width: 125px;
+}
+
+
+#footer {
+    position: relative;
+    left: 0px;
+    bottom: -110vh;
+    height: 30px;
+    width: 100%;
+    background: #999;
 }
