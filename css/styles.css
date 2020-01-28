@@ -17,7 +17,7 @@ body {
     position: relative;
     left: -8px;
     top: -16px;
-    width: 100vw;
+    width: 99.5vw;
     background: url('../img/test3.jpg') no-repeat center center fixed;
     background-size: cover;
     height: 100vh;
@@ -101,7 +101,7 @@ nav {
     /*text-align: center;*/
     font-family: 'Bebas Neue', cursive;
     padding: 10px;
-    font-size: 14pt;
+    font-size: 22pt;
     color: white;
     transition: all 300ms;
 }
@@ -473,4 +473,58 @@ h1 {
     /*background-color: red;*/
     left: 10%;
     right: 25%;
+}
+
+
+/*#TercDiv::-webkit-scrollbar-track {
+    background-color: #2494A2;
+}
+
+#TercDiv::-webkit-scrollbar-thumb
+{
+    background-color: #DBB13B;
+}
+
+#TercDiv::-webkit-scrollbar-thumb:hover
+{
+    background-color: cadetblue;
+}*/
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #303030;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #303030;
+    border: solid 1px #DBB13B;
+    border-radius: 10px;
+}
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #141414;
+    }
+
+.InfoContentDiv::-webkit-scrollbar {
+    background-color: rgba(0,0,0,0);
+}
+
+.InfoContentDiv::-webkit-scrollbar-track {
+    border: solid 0px red;
+    background-color: rgba(0,0,0,0);
+    box-shadow: inset 0 0 5px rgba(0,0,0,0);
+}
+
+.InfoContentDiv::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,0);
+    border: solid 0px red;
 }
