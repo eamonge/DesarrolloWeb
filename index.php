@@ -8,15 +8,15 @@
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/flag.min.css" />
 </head>
-<body>
+<body id="TestA">
     <div id="DivBannerMain">
         <nav>
             <ul>
                 <a class="navItem HomeIcn"><i class="fas fa-home"></i></a>
                 <a class="navItem"><li class="navList">Contáctenos</li></a>
-                <a class="navItem"><li class="navList">Ingresar sesión</li></a>
-                <a class="navItem"><li class="navList">Horarios</li></a>
-                <a class="navItem"><li class="navList">Sobre nosotros</li></a>
+                <a href="html/LoginUsuario.php" class="navItem"><li class="navList">Ingresar sesión</li></a>
+                <a href="html/Horarios2.php" class="navItem"><li class="navList">Horarios</li></a>
+                <a id="AbtUs" class="navItem"><li class="navList">Sobre nosotros</li></a>
             </ul>
         </nav>
         <h1>
@@ -27,14 +27,26 @@
         <br />
         <a href="#InfoDiv">
             <button>
-                Show more
+                Ver más
                 <i class="fas fa-caret-right"></i>
             </button>
         </a>
     </div>
     <br />
+    <div id="DivAbtUs">
+        <!--<p>+</p>-->
+        <section id="InfoSectn">
+            <i id="CloseBtn" class="fas fa-times"></i>
+            <h1>¿Quienes somos?</h1> 
+            <hr />
+            <h3>Nosotros somos un servicio de tren a través de los 5 continentes dentro de los países afiliados</h3>
+            <h3>Ofrecemos calidad de servicio a nivel internacional</h3>
+            <h3>Nuestros trenes ofrecen carros de hospedaje y alimentación</h3>
+            <h3>Est. 1890</h3>
+        </section>
+    </div>
     <div class="container">
-        <div id="InfoDiv">
+        <div id="InfoDiv" class="InfoContentDiv">
             <h1>Países afiliados</h1>
             <hr class="headerHR" />
             <h2>Tenemos países y rutas afiliadas a nuestro servicio en todo el mundo y todos los continentes, entre ellas:</h2>
@@ -55,21 +67,20 @@
             <hr class="headerHR" />
             <h2>Nos comprometemos a la satisfacción del cliente en la totalidad de su viaje, acomodando cualquier necesidad que sea necesaria.</h2>
         </div>
-        <div id="SecDiv">
+        <div id="SecDiv" class="InfoContentDiv">
             <h1>¿Adónde vámos?</h1>
             <hr class="headerHR" />
             <h2>Por nuestro enorme servicio y su gran cobertura, los clientes pueden encontrar los servicios en cualquier continente en los países declarados <a href="#">aquí</a>.</h2>
         </div>
         <br />
         <br />
-        <div id="TercDiv">
+        <div id="TercDiv" class="InfoContentDiv">
             <h1>Instituciones Asociadas</h1>
             <hr class="headerHR" />
             <h2>
                 -Europa
                 <hr class="AssocHR" />
                 <img src="img/ectaa_icon.jpg" />
-                <span class="tooltip"></span>
                 <img src="img/tucan_icon.png" />
                 <img src="img/euroventure_icon.jpg" />
             </h2>
@@ -113,12 +124,11 @@
         </div>
 
     </div>
-    
+
     <!--<div id="footer" class="BA">
         <h1></h1>
 
     </div>-->
-
     <!--<div id="bannerDiv">
         <img id="ImgBanner" src="../img/train_banner_image.jpg" width="100%" />
         <img id="ImgBanner" src="https://wallpapercave.com/wp/FPfe3Eu.jpg" width="99.99%"/>
@@ -513,6 +523,7 @@
         <br />
     </div>
     <br />-->
+    <script src="js/index.js"></script>
     <script src="https://kit.fontawesome.com/03593bd05b.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
